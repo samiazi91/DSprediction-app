@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import xgboost as xgb
 import numpy as np
 st.title('Damage state prediction for RCSWs----<Hamidia et al.>')
-algorithm= st.radio('ML algorithm:', ['Extreme Gradient Boost','CatBoost'])
+algorithm= st.radio('ML algorithm:', ['CatBoost-Scenario VII','Extreme Gradient Boost-Scenario IX'])
 df = pd.read_csv('RCSW-Input.csv', index_col=[])
 data=df.head(285)
 y = data["DS"]
