@@ -26,7 +26,7 @@ def predictionXGB (A):
  predicted_y = xgbModel.predict(A)
  return predicted_y
 
-if algorithm=='CatBoost':
+if algorithm=='CatBoost-Scenario VII':
       Aspect_Ratio =st.number_input("Aspect Ratio__H/L")
       TB =st.number_input("Succolarity__T2B")
       LR = st.number_input("Succolarity_L2R")
